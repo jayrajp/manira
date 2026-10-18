@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-cream text-black font-sans;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-gold text-white font-semibold rounded-none px-6 py-3 hover:bg-gold-dark transition-colors duration-200 tracking-wide uppercase text-sm;
+  }
+  .btn-secondary {
+    @apply border-2 border-gold text-gold font-semibold rounded-none px-6 py-3 hover:bg-gold hover:text-white transition-all duration-200 tracking-wide uppercase text-sm;
+  }
+  .btn-black {
+    @apply bg-black text-white font-semibold rounded-none px-6 py-3 hover:bg-black-soft transition-colors duration-200 tracking-wide uppercase text-sm;
+  }
+  .section-title {
+    @apply font-serif text-2xl md:text-3xl font-bold text-black text-center;
+  }
+  .section-subtitle {
+    @apply text-sm text-gray-500 text-center mt-2;
+  }
+  .discount-badge {
+    @apply absolute top-2 left-2 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full z-10;
+  }
+  .new-badge {
+    @apply absolute top-2 left-2 bg-gold text-white text-xs font-bold px-2 py-1 rounded-full z-10;
+  }
+  .bestseller-badge {
+    @apply absolute top-2 left-2 bg-black text-white text-xs font-bold px-2 py-1 rounded-full z-10;
+  }
+}
+
+/* Swiper customization */
+.swiper-pagination-bullet-active { background: #B8860B !important; }
+.swiper-button-next, .swiper-button-prev { color: #B8860B !important; }
